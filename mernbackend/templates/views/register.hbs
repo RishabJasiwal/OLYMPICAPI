@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="registration-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">rishu</a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="link">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">Some Page</a>
+                    </li>
+                    <li class="link">
+                        <a href="registration.html">Registration</a>
+                    </li>90
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="user-container login-section--display">
+            <div class="registration">
+                <div class="grid-two--column">
+                    <div class="form-text">
+                        <h2>Welcome Back</h2>
+                        <p>To keep connected with us login with your person</p>
+                        <button class="login-btn">Login Here</button>
+                    </div>
+
+                    <div class="registration-form">
+                        <h2>Create Account</h2>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://discord.gg/MdScmCsua6" target="_blank">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </div>
+                        <p>or use your email for registration</p>
+
+                        <form action="#">
+                            <div class="input-field">
+                                <label for="username">
+                                    <input type="text" name="name" id="username" placeholder="Name">
+                                </label>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="Email"><input type="email" name="email" id="Email" placeholder="Email"></label>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="Password"><input type="password" name="password" id="Password" placeholder="password"></label>
+                            </div>
+
+                            <div class="input-field">
+                                <input type="submit" value="Register">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login">
+                <div class="grid-two--column">
+                    <div class="form-text">
+                        <h2>Hello, Friend!</h2>
+                        <p>Enter your personal detail and start the journey with us</p>
+                        <button class="registration-btn">Register Here</button>
+                    </div>
+
+                    <div class="login-form">
+                        <h2>Sign In</h2>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://discord.gg/MdScmCsua6" target="_blank">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </div>
+                        <p>or use your account</p>
+
+                        <form action="#">
+                            <div class="input-field">
+                                <label for="Email1"><input type="email" name="email" id="Email1" placeholder="Email"></label>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="Password1"><input type="password" name="password" id="Password1" placeholder="password"></label>
+                            </div>
+
+                            <div class="input-field">
+                                <input type="submit" value="Login">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const user_con = document.querySelector('.user-container');
+        const regis_btn = document.querySelector('.form-text .registration-btn'); // Update selector
+        const login_btn = document.querySelector('.form-text .login-btn'); // Update selector
+
+        regis_btn.addEventListener('click', () => {
+            user_con.classList.add('login-section--display'); // Remove login section display
+        });
+
+        login_btn.addEventListener('click', () => {
+            user_con.classList.remove('login-section--display'); // Add login section display
+        });
+    </script>
+
+
+</body>
+
+</html>
